@@ -62,12 +62,12 @@ const Projects = () => {
             <div className='flex flex-col md:flex-row px-10 pb-10 gap-5'>
             { config1.projects1.map((project) =>(
                     <div className='relative flex-wrap'>
-                        <img className='h-[250px] w-[400px]' src={project.image} />
+                        <img className='h-[250px] w-[400px]' src={project.image} alt='ProjectImg' />
                         <div className='project-desc'>
                             <p className='text-center px-5 py-5'> {project.description}</p>
                             <div className='flex justify-center gap-5' >
-                                <a className='btn' href={project.link} target='_blank'> View Project</a>
-                                <a className='btn' href={project.gitlink} target='_blank'> Source Code</a>
+                                <a className='btn' href={project.link} target='_blank' rel='noopener noreferrer'> View Project</a>
+                                <a className='btn' href={project.gitlink} target='_blank' rel='noopener noreferrer'> Source Code</a>
                             </div>
                         </div>
 
@@ -81,12 +81,12 @@ const Projects = () => {
            <div className='flex flex-col md:flex-row px-10 pb-10 gap-5'>
             { config2.projects2.map((project) =>(
                     <div className='relative flex-wrap'>
-                        <img className='h-[250px] w-[400px]' src={project.image} />
+                        <img className='h-[250px] w-[400px]' src={project.image} alt='ProjectImg'/>
                         <div className='project-desc'>
                             <p className='text-center px-5 py-5'> {project.description}</p>
                             <div className='flex justify-center gap-5' >
-                                <a className='btn' href={project.link} target='_blank'> View Project</a>
-                                <a className='btn' href={project.gitlink} target='_blank'> Source Code</a>
+                                <a className='btn' href={project.link} target='_blank' rel='noopener noreferrer'> View Project</a>
+                                <a className='btn' href={project.gitlink} target='_blank' rel='noopener noreferrer'> Source Code</a>
                             </div>
                         </div>
 

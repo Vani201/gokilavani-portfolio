@@ -24,7 +24,7 @@ const About = () => {
   return (
     <section id='about' className='flex flex-col md:flex-row bg-secondary px-5 py-20 '>
         <div className=' md:w-1/2  py-5 flex justify-center md:justify-end'>
-            <img className='h-[450px] w-[450px] ' src={AboutImg} />
+            <img className='h-[450px] w-[450px] ' src={AboutImg} alt='AboutImg'/>
         </div>
 
         <div className='md:w-1/2 flex justify-center'>

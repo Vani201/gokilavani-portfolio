@@ -6,10 +6,10 @@ const Header = () => {
 
   return (
     <header className='flex justify-between px-5 py-2 bg-secondary'>
-        <a className='font-bold text-white' href="#"> Gokilavani Poornachandran</a>
+        <a className='font-bold text-white'> Gokilavani Poornachandran</a>
         <nav className='hidden md:block'>
             <ul className='flex text-white font-bold'>
-                <li> <a href="#"> Home </a></li>
+                <li> <a> Home </a></li>
                 <li> <a href="#about"> About </a></li>
                 <li> <a href="#projects"> Projects</a></li>
                 <li> <a href="#resume"> Resume </a></li>
@@ -20,7 +20,7 @@ const Header = () => {
        {
          toggleMenu &&  <nav className='block md:hidden '>
             <ul onClick={()=> setToggleMenu(!toggleMenu)} className='flex flex-col text-white mobile-nav '>
-                <li> <a href="#"> Home </a></li>
+                <li> <a> Home </a></li>
                 <li> <a href="#about"> About </a></li>
                 <li> <a href="#projects"> Projects</a></li>
                 <li> <a href="#resume"> Resume </a></li>

@@ -27,7 +27,7 @@ const Hero = () => {
 
         </div>
 
-        <img className='md:w-1/2  h-[300px] w-[500px]' src={MernImg} />
+        <img className='md:w-1/2  h-[300px] w-[500px]' src={MernImg} alt='HeroImg'/>
        {/*  <img className='md:w-1/3' src={HeroImg} /> */}
     </section>
   )

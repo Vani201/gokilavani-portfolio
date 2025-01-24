@@ -11,7 +11,7 @@ const Resume = () => {
   return (
     <section id='resume' className='flex flex-col md:flex-row bg-secondary px-5 py-20' >
         <div className='md:w-1/2 py-5 flex justify-center md:justify-end'>
-            <img className='w-[300px] ' src={ResumeImg} />
+            <img className='w-[300px] ' src={ResumeImg} alt='ResumeImg' />
         </div>
 
         <div className='md:w-1/2 flex justify-center'>
