@@ -71,7 +71,7 @@ const Projects = () => {
             <div className='flex flex-col md:flex-row px-10 pb-10 gap-5'>
             { config1.projects1.map((project) =>(
                     <div className='relative flex-wrap'>
-                        <img className='h-[300px] w-[500px]' src={project.image} alt='ProjectImg' />
+                        <img className='md:h-[300px] w-[500px] h-[400px]' src={project.image} alt='ProjectImg' />
                         <div className='project-desc'>
                             <p className='text-center px-5 py-5'> {project.description}</p>
                             <div className='flex justify-center gap-5' >
