@@ -74,7 +74,7 @@ const Projects = () => {
                         <img className='md:h-[300px] md:w-[500px] h-[400px] w-[300px]' src={project.image} alt='ProjectImg' />
                         <div className='project-desc'>
                             <p className='text-center px-5 py-5'> {project.description}</p>
-                            <div className='flex justify-center gap-5' >
+                            <div className='flex flex-col md:flex-row justify-center gap-5' >
                                 <a className='btn' href={project.link} target='_blank' rel='noopener noreferrer'> View Project</a>
                                 <a className='btn' href={project.gitlink} target='_blank' rel='noopener noreferrer'> Source Code</a>
                             </div>
@@ -93,7 +93,7 @@ const Projects = () => {
                         <img className='md:h-[300px] w-[500px] h-[400px] ' src={project.image} alt='ProjectImg'/>
                         <div className='project-desc'>
                             <p className='text-center px-5 py-5'> {project.description}</p>
-                            <div className='flex justify-center gap-5' >
+                            <div className='flex flex-col md:flex-row justify-center gap-5' >
                                 <a className='btn' href={project.link} target='_blank' rel='noopener noreferrer'> View Project</a>
                                 <a className='btn' href={project.gitlink} target='_blank' rel='noopener noreferrer'> Source Code</a>
                             </div>
