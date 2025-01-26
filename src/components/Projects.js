@@ -4,6 +4,7 @@ import WebsiteImg2 from '../assets/colorapp.png'
 import WebsiteImg3 from '../assets/calculator.png'
 import WebsiteImg4 from '../assets/bookapp.jpg'
 import WebsiteImg5 from '../assets/todolist.png'
+import WebsiteImg6 from '../assets/bmi.jpg'
 
 
 
@@ -24,11 +25,12 @@ const Projects = () => {
                 gitlink:'https://github.com/Vani201/JokeGenerator'
             },
             {
-                image: WebsiteImg2,
-                description:"A React.js app that lets you preview colors instantly! Enter a color name in the input box, and the app displays the corresponding color eith its hex value. A simple project demonstrating React State Management and dynamic styling" ,
-                link: 'https://color-react-project.netlify.app/',
-                gitlink: 'https://github.com/Vani201/react_color'
+                image: WebsiteImg6,
+                description:"A simple and interactive BMI Calculator built with React.js, allowing users to easily calculate their Body Mass Index by inputting height and weight. Get instant results and track your health status effortlessly." ,
+                link: 'https://bmi-calc-react-project.netlify.app/',
+                gitlink: 'https://github.com/Vani201/Bmi_Calculator'
             }
+           
     
         ]
     }
@@ -42,11 +44,18 @@ const Projects = () => {
                 gitlink: 'https://github.com/Vani201/simple-calculator'
             },
             {
+                image: WebsiteImg2,
+                description:"A React.js app that lets you preview colors instantly! Enter a color name in the input box, and the app displays the corresponding color eith its hex value. A simple project demonstrating React State Management and dynamic styling" ,
+                link: 'https://color-react-project.netlify.app/',
+                gitlink: 'https://github.com/Vani201/react_color'
+            },
+            {
                 image: WebsiteImg4,
-                description:"Track your reading journey with ease using the Book Reading Tracker app! Log books, monitor progress, set goals, and stay motivated to achieve your reading milestones—all in one simple, user-friendly platform." ,
+                description:"Track your reading journey with ease using the Book Reading Tracker app! Log books, monitor progress, set goals, and stay motivated to achieve your reading milestones—all in one simple, user-friendly platform.",
                 link: 'https://bookreading-tracker.netlify.app/',
                 gitlink: 'https://github.com/Vani201/bookapp'
             }
+            
             
         ]
     }
@@ -62,7 +71,7 @@ const Projects = () => {
             <div className='flex flex-col md:flex-row px-10 pb-10 gap-5'>
             { config1.projects1.map((project) =>(
                     <div className='relative flex-wrap'>
-                        <img className='h-[250px] w-[400px]' src={project.image} alt='ProjectImg' />
+                        <img className='h-[300px] w-[500px]' src={project.image} alt='ProjectImg' />
                         <div className='project-desc'>
                             <p className='text-center px-5 py-5'> {project.description}</p>
                             <div className='flex justify-center gap-5' >
@@ -81,7 +90,7 @@ const Projects = () => {
            <div className='flex flex-col md:flex-row px-10 pb-10 gap-5'>
             { config2.projects2.map((project) =>(
                     <div className='relative flex-wrap'>
-                        <img className='h-[250px] w-[400px]' src={project.image} alt='ProjectImg'/>
+                        <img className='h-[300px] w-[500px]' src={project.image} alt='ProjectImg'/>
                         <div className='project-desc'>
                             <p className='text-center px-5 py-5'> {project.description}</p>
                             <div className='flex justify-center gap-5' >
