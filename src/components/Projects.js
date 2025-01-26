@@ -94,8 +94,8 @@ const Projects = () => {
                         <div className='project-desc'>
                             <p className='text-center px-5 py-5'> {project.description}</p>
                             <div className='flex flex-col md:flex-row justify-center gap-5' >
-                                <a className='btn' href={project.link} target='_blank' rel='noopener noreferrer'> View Project</a>
-                                <a className='btn' href={project.gitlink} target='_blank' rel='noopener noreferrer'> Source Code</a>
+                                <a className='btn ' href={project.link} target='_blank' rel='noopener noreferrer'> View Project</a>
+                                <a className='btn ' href={project.gitlink} target='_blank' rel='noopener noreferrer'> Source Code</a>
                             </div>
                         </div>
 
