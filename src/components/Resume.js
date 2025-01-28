@@ -1,6 +1,6 @@
 import React from 'react'
 import ResumeImg from '../assets/updated-resume.svg'
-import Resumepdf from '../assets/Gokilavani_Resume.pdf'
+import Resumepdf from '../assets/Gokilavani_P(Resume).pdf'
 
 const Resume = () => {
 
