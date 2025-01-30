@@ -1,10 +1,12 @@
 import React from 'react'
-import WebsiteImg1 from '../assets/joke.jpg'
-import WebsiteImg2 from '../assets/colorapp.png'
-import WebsiteImg3 from '../assets/calculator.png'
-import WebsiteImg4 from '../assets/bookapp.jpg'
-import WebsiteImg5 from '../assets/todolist.png'
-import WebsiteImg6 from '../assets/bmi.jpg'
+import WebsiteImg1 from  '../assets/todolist.png'
+import WebsiteImg2 from '../assets/socialmedia.jpeg'
+import WebsiteImg3 from  '../assets/joke.jpg' 
+import WebsiteImg4 from  '../assets/bmi.jpg' 
+import WebsiteImg5 from  '../assets/colorapp.png' 
+import WebsiteImg6 from '../assets/calculator.png' 
+import WebsiteImg7 from '../assets/bookapp.jpg'
+ 
 
 
 
@@ -12,24 +14,25 @@ const Projects = () => {
 
     const config1={
         projects1: [
+            
             {
-                image: WebsiteImg5,
-                description:"A simple and intuitive React app to manage your tasks efficiently. Add, edit, and mark tasks as completed with ease to stay organized and productive.",
+                image: WebsiteImg1,
+                description:"A simple and efficient React JS To-Do List app to add, edit, and manage tasks with a clean UI for better productivity.",
                 link: 'https://gokilavani-todolist-react.netlify.app/',
                 gitlink:'https://github.com/Vani201/todolist_react'
             },
             {
-                image: WebsiteImg1,
-                description:"A fun interactive application built using React.js that delivers random jokes with a single click! Users can click a button to receive a new joke, making it a delightful way to lighten the mood. It shows my skills in handling API requests and creating responsive designs" ,
-                link: 'https://react-joke-generator-project.netlify.app/',
-                gitlink:'https://github.com/Vani201/JokeGenerator'
+                image: WebsiteImg2,
+                description:"A dynamic React JS social media app for connecting, sharing, and engaging with friends through posts, comments, and likes in real time.",
+                link: 'https://react-social-media-project.netlify.app/',
+                gitlink:'https://github.com/Vani201/social_media'
             },
             {
-                image: WebsiteImg6,
-                description:"A simple and interactive BMI Calculator built with React.js, allowing users to easily calculate their Body Mass Index by inputting height and weight. Get instant results and track your health status effortlessly." ,
-                link: 'https://bmi-calc-react-project.netlify.app/',
-                gitlink: 'https://github.com/Vani201/Bmi_Calculator'
-            }
+                image: WebsiteImg3,
+                description:"A fun React JS joke generator app that delivers random jokes instantly to keep you entertained and laughing." ,
+                link: 'https://react-joke-generator-project.netlify.app/',
+                gitlink:'https://github.com/Vani201/JokeGenerator'
+            }            
            
     
         ]
@@ -37,28 +40,40 @@ const Projects = () => {
 
     const config2={
         projects2: [
-             {
-                image: WebsiteImg3,
-                description:"A basic yet functional calculator built using HTML, CSS and JS. It performs basic arithmetic operations, featuring a clean interface and responsive design. It demonstrates my ability to create interactive web applications and manage user input effectively" ,
-                link: 'https://simplecalc-project.netlify.app/',
-                gitlink: 'https://github.com/Vani201/simple-calculator'
-            },
-            {
-                image: WebsiteImg2,
-                description:"A React.js app that lets you preview colors instantly! Enter a color name in the input box, and the app displays the corresponding color eith its hex value. A simple project demonstrating React State Management and dynamic styling" ,
-                link: 'https://color-react-project.netlify.app/',
-                gitlink: 'https://github.com/Vani201/react_color'
-            },
             {
                 image: WebsiteImg4,
-                description:"Track your reading journey with ease using the Book Reading Tracker app! Log books, monitor progress, set goals, and stay motivated to achieve your reading milestones—all in one simple, user-friendly platform.",
-                link: 'https://bookreading-tracker.netlify.app/',
-                gitlink: 'https://github.com/Vani201/bookapp'
+                description:"A simple React JS BMI calculator to quickly measure Body Mass Index and track fitness goals with instant results." ,
+                link: 'https://bmi-calc-react-project.netlify.app/',
+                gitlink: 'https://github.com/Vani201/Bmi_Calculator'
+            },
+            {
+                image: WebsiteImg5,
+                description:"A React JS color generator app that creates random colors with hex codes, helping designers and developers find inspiration instantly." ,
+                link: 'https://color-react-project.netlify.app/',
+                gitlink: 'https://github.com/Vani201/react_color'
+            },          
+             {
+                image: WebsiteImg6,
+                description:"A basic React JS calculator for performing quick arithmetic operations like addition, subtraction, multiplication, and division with a clean and user-friendly interface." ,
+                link: 'https://simplecalc-project.netlify.app/',
+                gitlink: 'https://github.com/Vani201/simple-calculator'
             }
-            
             
         ]
     }
+    const config3={
+        projects3: [
+            {
+                image: WebsiteImg7,
+                description:"A React JS book tracker app to log, organize, and track your reading progress, helping you manage your favorite books efficiently.",
+                link: 'https://bookreading-tracker.netlify.app/',
+                gitlink: 'https://github.com/Vani201/bookapp'
+            }       
+            
+        ]
+    }
+
+    
   return (
     <section id='projects' className='flex flex-col px-5 py-20 justify-center bg-primary text-white'>
         <div className='w-1/2'>
@@ -89,6 +104,25 @@ const Projects = () => {
 
            <div className='flex flex-col md:flex-row px-10 pb-10 gap-5'>
             { config2.projects2.map((project) =>(
+                    <div className='relative flex-wrap'>
+                        <img className='md:h-[300px] md:w-[500px] h-[400px] w-[300px]' src={project.image} alt='ProjectImg'/>
+                        <div className='project-desc'>
+                            <p className='text-center px-5 py-5'> {project.description}</p>
+                            <div className='flex flex-col md:flex-row justify-center gap-5' >
+                                <a className='btn ' href={project.link} target='_blank' rel='noopener noreferrer'> View Project</a>
+                                <a className='btn ' href={project.gitlink} target='_blank' rel='noopener noreferrer'> Source Code</a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+              )
+            )}
+               
+           </div>
+
+           <div className='flex flex-col md:flex-row px-10 pb-10 gap-5'>
+            { config3.projects3.map((project) =>(
                     <div className='relative flex-wrap'>
                         <img className='md:h-[300px] md:w-[500px] h-[400px] w-[300px]' src={project.image} alt='ProjectImg'/>
                         <div className='project-desc'>
